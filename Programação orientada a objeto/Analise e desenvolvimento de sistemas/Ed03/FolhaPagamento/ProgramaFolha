@@ -1,0 +1,20 @@
+package ed03.folhaPagamento;
+
+public class ProgramaFolha {
+    public static void main(String[] args) {
+        FuncionarioCLT carlos = new FuncionarioCLT("Carlos", 2000.00);
+        FuncionarioTemporario ana = new FuncionarioTemporario("Ana", 2000.00);
+
+        System.out.println("--- Funcionário CLT ---");
+        carlos.exibirDados();
+        double salarioCarlos = carlos.calcularSalario();
+        System.out.println("Salário Final: R$ " + salarioCarlos);
+
+        System.out.println();
+
+        System.out.println("--- Funcionário Temporário ---");
+        ana.exibirDados();
+        double salarioAna = ana.calcularSalario();
+        System.out.println("Salário Final: R$ " + salarioAna);
+    }
+}
